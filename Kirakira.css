@@ -167,6 +167,8 @@ nav {
       height:48%;
       align-self: center;
     }
+
+
      
     /* nav bar flex end */
 
@@ -199,12 +201,8 @@ nav {
 /* main data css*/
 
 
-#container {
-  display: flex;
-  height: 100vh;
-  flex-direction: column;
-  align-content:center;
-}
+
+.container,
 .Container {
   display: flex;
   height: 100vh;
@@ -215,49 +213,80 @@ nav {
 
 /*logo*/
 .logo{
-
+height: 89%;
+aspect-ratio:  1 / 2;
 opacity: 25%;
 }
 
 /*logo end*/
 
-/* mock up image behavior 
-.mockup{
-  position: absolute;
-  top:10%;
-  visibility: hidden;
-} 
+/* mock up image behavior */
 
-.mockup>img{
-  height: auto;
-  width: 300px;
-  position: absolute;
-  top:10%;
+.mockup{
   transition: 0.1s ease-in-out;
   animation: animprod 3s ease-in-out  infinite alternate;
 } 
-
-.mockup>img:hover{
-  width: 330px;
-  height: auto;
+.mockup:hover{
+  box-shadow: 0px 0px 20px  rgb(223, 220, 220);
+  width: 110px;
+  aspect-ratio: 1 / 1;
+  bottom: 1px;
+  border-radius: 50%;
+}
+.services{
+  left: 48%;
+  position:absolute;
+  border-radius: 50%;
+  width: 100px;
+  aspect-ratio: 1 / 1;
 }
 
-#container>a:nth-of-type(1) {
-    animation: animprod 5s ease-in-out  infinite alternate-reverse;
+.container>.mockup:nth-of-type(1) {
+    animation: animprod 4.5s ease-in-out  infinite alternate-reverse;
+    top: 20%;
+    background-color: rgb(255, 0, 0);
    }
-#container>a:nth-of-type(2) {
-  left : 300px;
+.container>.mockup:nth-of-type(2) {
+  top: 35%;
  animation: animprod 3s ease-in-out  infinite alternate;
+ background-color:green;
 }
-
+.container>.mockup:nth-of-type(3) {
+  top: 50%;
+ animation: animprod 4s ease-in-out  infinite alternate;
+ background-color: rgb(0, 255, 255);
+}
+.container>.mockup:nth-of-type(4) {
+  top: 65%;
+ animation: animprod 3.5s ease-in-out  infinite alternate;
+ background-color: green;
+}
+.container>.mockup:nth-of-type(5) {
+  top: 80%;
+left:38%;
+ animation: animprod 5.5s ease-in-out  infinite alternate;
+ background-color: yellow;
+ width: 500px;
+ aspect-ratio: 1 / 1;
+ align-content: center;
+}
 @keyframes animprod{
   from{ 
     transform: translateY(-5px);
-    transform: rotate(2deg);
-  }
+   }
   to{
     transform: translateY(+10px);
-    transform: rotate(-2deg);
-  }
+     }
 }
-mock up image behavior*/
+.textalign {
+  text-align: center;
+  position: relative;
+  top: 45%;
+  left: 0;
+  right: 0;
+  
+  vertical-align: middle;
+  font-weight: 800;   
+}
+
+/*mock up image behavior*/
